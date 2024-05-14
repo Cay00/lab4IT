@@ -16,4 +16,9 @@ elif [ "$1" = "--logs" ]; then
         echo "Skrypt: $0" >> $nazwa_pliku
         echo "Data utworzenia: $(date +"%Y-%m-%d %H:%M:%S")" >> $nazwa_pliku
     done
+elif [ "$1" = "--help" ]; then
+    echo "Dostępne opcje:"
+    echo "  skrypt.sh --date             Wyświetla dzisiejszą datę"
+    echo "  skrypt.sh --logs [liczba]    Tworzy pliki log. Domyślnie 100, opcjonalnie podaj liczbę plików."
+    echo "  skrypt.sh --help             Wyświetla wszystkie dostępne opcje"
 fi
